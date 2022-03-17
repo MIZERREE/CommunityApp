@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey_boder4"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/edit_custom_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/light_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="Date it happened"
+            android:background="@drawable/tv_highlight"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_when_happened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="2021/06/15"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="Name"
+            android:background="@drawable/tv_highlight"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/light_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="Address"
+            android:background="@drawable/tv_highlight"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/light_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="Contacts"
+            android:background="@drawable/tv_highlight"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="contacts"
+            android:textColor="@color/light_red"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:text="Date of burial"
+            android:background="@drawable/tv_highlight"
+            android:paddingLeft="10dp"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_burial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burial"
+            android:textColor="@color/light_red"/>
+
+        <TextView
+            android:id="@+id/edit_custom_extras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extras"
+            android:textColor="@color/light_red"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

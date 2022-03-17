@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.admin.AdminAssetsFragment"
+    android:background="@drawable/admin_bg"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo_leola_black"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assets"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assign assets to a community member"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_border2"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/tv_sub_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search issued assets"
+            android:textColor="@color/white" />
+
+        <AutoCompleteTextView
+            android:id="@+id/admin_text_search_asset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_bg"
+            android:hint="name of member"
+            android:textColor="@color/light_red"
+            android:textColorHint="@color/light_red"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/my_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_border2"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue an asset"
+                android:textColor="@color/black"
+                android:layout_gravity="center" />
+
+            <TextView
+                android:id="@+id/text_admin_assets_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Issue date: Fri 09 jul 2021"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/name"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/admin_text_asset_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:paddingLeft="5dp"
+                android:hint="person responsible"
+                android:enabled="false"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/user_icon"
+                android:background="@drawable/grey_border3"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/admin_text_asset_address"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:textColor="@color/red"
+                android:hint="where are the assets going"
+                android:enabled="false"
+                android:fontFamily="sans-serif-light"
+                android:paddingLeft="5dp"
+                android:drawableLeft="@drawable/address_icon"
+                android:background="@drawable/grey_border3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/grey_border2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assets"
+                    android:textColor="@color/white" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_tents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tent"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_tents"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_chairs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Chairs"
+                            android:textStyle="bold"
+                            android:backgroundTintMode="add"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_chairs"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_pots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pots"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_pots"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_plates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Plates"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_plates"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_cups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cups"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_cups"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_tables"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tables"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_tables"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_weight="1"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_cloth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Cloth"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_cloth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:background="@drawable/grey_border3"
+                        android:padding="10dp">
+
+                        <CheckBox
+                            android:id="@+id/admin_chk_spades"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Spades"
+                            android:textStyle="bold"
+                            android:textColor="@color/primary"/>
+
+                        <NumberPicker
+                            android:id="@+id/pck_spades"
+                            android:layout_width="wrap_content"
+                            android:layout_height="100dp"
+                            android:layout_alignParentRight="true"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/description"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/admin_text_description_asset"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:hint="what was issued, how many, for how long, etc."
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/description_icon"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/upload"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/asset_progress_bar"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:progress="0"/>
+
+            <ImageView
+                android:id="@+id/admin_img_assets"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/image_logo"
+                android:paddingLeft="5dp"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anything to add?"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"/>
+
+            <EditText
+                android:id="@+id/admin_text_optional_text"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:hint="optional"
+                android:drawableLeft="@drawable/more_icon"
+                android:fontFamily="sans-serif-light"
+                android:text="Nothing to add"
+                android:textColor="@color/red"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <Button
+                android:id="@+id/admin_btn_issue_asset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button2"
+                android:text="Issue asset"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/primary"
+                />
+
+            <LinearLayout
+                android:id="@+id/assets_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border2"
+                android:elevation="10dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/tv_sub_header">
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarAdAssets"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Assets"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="People who have assets will be listed below"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/admin_rcl_assets_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

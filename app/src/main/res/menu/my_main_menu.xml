@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:title="Home"
+            android:icon="@drawable/home_icon"/>
+
+    </group>
+
+    <item android:title="Users">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_users"
+                    android:title="Users"
+                    android:icon="@drawable/user_icon"/>
+
+                <item
+                    android:id="@+id/nav_group"
+                    android:title="Groups"
+                    android:icon="@drawable/group_icon"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Requests">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_announce"
+                    android:title="Announcements"
+                    android:icon="@drawable/announce_icon"/>
+
+                <item
+                    android:id="@+id/nav_assets"
+                    android:title="Assets"
+                    android:icon="@drawable/assets_icon"/>
+
+                <item
+                    android:id="@+id/nav_incidents"
+                    android:title="Incidents"
+                    android:icon="@drawable/incident_icon"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Finance">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_cont"
+                    android:title="Contributions"
+                    android:icon="@drawable/cont_icon"/>
+
+                <item
+                    android:id="@+id/nav_fines"
+                    android:title="Fines"
+                    android:icon="@drawable/money_icon"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Profile">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profile"
+                    android:title="Profile"
+                    android:icon="@drawable/profile_icon"/>
+
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Logout"
+                    android:icon="@drawable/logout_icon"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+    <item android:title="Share">
+
+        <menu>
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share"
+                    android:icon="@drawable/share_icon"/>
+
+                <item
+                    android:id="@+id/nav_rate_us"
+                    android:title="Rat us"
+                    android:icon="@drawable/rate_icon"/>
+
+            </group>
+
+        </menu>
+
+    </item>
+
+</menu>

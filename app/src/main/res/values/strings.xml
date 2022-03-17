@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">Community App</string>
+
+    <!-- Login -->
+    <string name="login">Tsena</string>
+    <string name="username">leina</string>
+    <string name="password">lentswe-kunutu</string>
+    <string name="forgot_password">O lebetṧe lentsu kunutu?</string>
+
+    <!-- Admin -->
+    <string name="welcome">O amogetṧwe</string>
+    <string name="announce_funeral">O Tsebiṧa lehu</string>
+    <string name="financial_contribution">kgoboketṧo ya tṧhelete</string>
+    <string name="total_fines">Kgoboketṧo Sekoloto</string>
+    <string name="fines">Tefo</string>
+    <string name="meetings">Kopano</string>
+    <string name="meetings_below">Dikopano</string>
+    <string name="assets">Lebelela thoto</string>
+    <string name="total_balance">Kgoboketṧo ya tṧhelete</string>
+    <string name="sign_out">Etṧwa</string>
+
+    <!-- Tribal -->
+    <string name="tribal_announcement">Ditsebiṧo tṧa setṧhaba</string>
+    <string name="announcer">Mmegi wa tsebiṧo</string>
+    <string name="Announcement">Tsebiṧo</string>
+    <string name="Announce">Beya tsebiṧo</string>
+
+    <!-- User -->
+    <string name="house_hold">Leloko la Leola</string>
+    <string name="my_financial_contribution">Meneelo ya gago</string>
+    <string name="view_fines">Lebelele Sekoloto</string>
+    <string name="report_incident">Tlaleha bothata</string>
+    <string name="my_assets">lebelela thoto</string>
+    <string name="announce_to_admin">Tsebisha</string>
+
+    <!-- Users -->
+    <string name="manage_users">Okamela Leloko</string>
+    <string name="name">leina</string>
+    <string name="surname">sefane</string>
+    <string name="address">Atrese</string>
+    <string name="phone">Nomoro ya Mogala</string>
+    <string name="description">Tlhaloso</string>
+    <string name="upload">Tsentšha faele</string>
+    <string name="deu_date">Tšatši la mafelelo</string>
+    <string name="fine">Kotlo</string>
+    <string name="Search">Nyaka</string>
+
+    <!-- Groups -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string-array name="community_groups">
+        <item>Thoto</item>
+        <item>Mampheko</item>
+        <item>No group</item>
+        <item>Monokaneng</item>
+        <item>Sethaseng</item>
+        <item>Naledi</item>
+        <item>Mabokeng</item>
+        <item>Mabemane</item>
+        <item>Mokgoloti</item>
+    </string-array>
+
+    <string-array name="community_roles">
+        <item>Household</item>
+        <item>Administrator</item>
+        <item>Tribal Authority</item>
+    </string-array>
+
+
+</resources>

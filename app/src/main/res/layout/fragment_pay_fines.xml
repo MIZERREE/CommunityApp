@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.household.PayFinesFragment"
+    android:background="@drawable/user_bg"
+    android:padding="10dp">
+
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fines"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay your fines below"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your total fines are:"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:layout_below="@+id/tv_sub_header"/>
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R0.00"
+        android:textColor="@color/primary"
+        android:layout_below="@+id/tv_group"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Fines will be displayed below"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:layout_below="@+id/tv_group_name"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_text"
+        android:background="@color/background2"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="35dp"
+        android:src="@drawable/logo_leola_black"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <ProgressBar
+        android:id="@+id/simpleProgressBarPay"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:max="100"
+        android:progress="50"
+        android:padding="5dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:visibility="gone"
+        android:indeterminate="true"/>
+
+    <ScrollView
+        android:id="@+id/my_scrollFines"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/line"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="65dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@+id/simpleProgressBarFines"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:progress="50"
+                android:padding="5dp"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:visibility="gone"
+                android:indeterminate="true" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcy_my_fines"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

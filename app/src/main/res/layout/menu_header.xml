@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@color/grey"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/logo3"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/slogan"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="Community App" />
+
+    <TextView
+        android:id="@+id/slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motho ke motho ka batho"
+        android:layout_alignParentBottom="true"
+        />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="175dp"
+        android:src="@drawable/pot2"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-46dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".roles.admin.AdminFinanceFragment"
+    android:background="@drawable/admin_bg"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo_leola_black"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial\n Contributions"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Make financial contributions"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        />
+
+    <ScrollView
+        android:id="@+id/my_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_sub_header"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_border2"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_border2"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+                <TextView
+                    android:id="@+id/admin_tv_group_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Your Group is: "
+                    android:textColor="@color/primary"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Group summary"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/admin_tv_all_members"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total members:"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:id="@+id/admin_tv_tot_contributions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total contributions"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="Contributions"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Search a group member below for contributions"
+                android:layout_gravity="center"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/admin_text_contribute_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_light"
+                android:text="Fri 09 jul 2021"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="@string/name"
+                android:textColor="@color/white" />
+
+            <AutoCompleteTextView
+                android:id="@+id/admin_text_cont_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/edit_bg"
+                android:hint="name of contributor"
+                android:textColor="@color/light_red"
+                android:textColorHint="@color/light_red"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginEnd="5dp"
+                android:drawableLeft="@drawable/search_icon"
+                android:padding="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Contacts"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/admin_text_cont_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:drawableLeft="@drawable/phone_icon"
+                android:hint="Contacts"
+                android:fontFamily="sans-serif-light"
+                android:enabled="false"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Address"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/admin_text_cont_address"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:drawableLeft="@drawable/address_icon"
+                android:hint="Address of contributor"
+                android:fontFamily="sans-serif-light"
+                android:enabled="false"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Amount"
+                android:textColor="@color/white" />
+
+            <EditText
+                android:id="@+id/admin_text_cont_amount"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:hint="R0.00"
+                android:gravity="right"
+                android:padding="5dp"
+                android:textColor="@color/red"
+                android:drawableLeft="@drawable/money_icon"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/admin_btn_contribute"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button2"
+                    android:text="Contribute"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/primary"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

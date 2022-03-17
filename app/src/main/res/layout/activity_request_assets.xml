@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.household.RequestAssetsActivity"
+    android:background="@drawable/asset"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/back_icon"
+        android:layout_marginTop="-5dp"
+        android:onClick="backFromReqAssets"/>
+
+    <ScrollView
+        android:id="@+id/my_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_below="@+id/first_layout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/grey_border2"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="Request assets"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/user_text_asset_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_light"
+                android:text="Fri 09 jul 2021"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="@string/name"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_text_asset_name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-light"
+                android:enabled="false"
+                android:drawableLeft="@drawable/user_icon"
+                android:paddingLeft="5dp"
+                android:hint="person responsible"
+                android:background="@drawable/grey_border3"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="@string/address"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_text_asset_address"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:enabled="false"
+                android:textColor="@color/red"
+                android:hint="where the assets are going"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/address_icon"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="What are you requesting"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_text_asset_description"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:inputType="textMultiLine"
+                android:gravity="top"
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-light"
+                android:hint="description"
+                android:drawableLeft="@drawable/description_icon"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="Anything else?"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/user_text_asset_extra"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="text"
+                android:hint="optional"
+                android:text="nothing"
+                android:textColor="@color/red"
+                android:fontFamily="sans-serif-light"
+                android:drawableLeft="@drawable/more_icon"
+                android:paddingLeft="5dp"
+                android:background="@drawable/grey_border3"/>
+
+            <Button
+                android:id="@+id/user_btn_asset_request"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_button2"
+                android:text="Request asset"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                app:backgroundTint="@color/primary"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.tribal.TribalDashboadFragment"
+    android:background="@drawable/tribal"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+        android:layout_marginTop="180dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:text="@string/tribal_announcement"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_light"
+                    android:text="Fri 09 jul 2021"
+                    android:textColor="@color/red"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:text="@string/announcer"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/text_tribal_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:drawableLeft="@drawable/user_icon"
+                    android:hint="name of announcer"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/grey_border3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:text="@string/Announcement"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/text_tribal_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/Announcement"
+                    android:gravity="top"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/grey_border3"/>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <Button
+                        android:id="@+id/tribal_btn_broadcast"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_button2"
+                        android:text="@string/Announce"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        app:backgroundTint="@color/primary"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Funerals"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.04" />
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarTribal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tribal_rcl_funerals"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General announcements"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:layout_marginStart="20dp"
+                    android:letterSpacing="0.04" />
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarTribalGen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tribal_rcl_gen_announcements"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginBottom="40dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_below="@+id/tv_sub_header"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Incidents Report"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.04" />
+
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarIncidentsDashTribal"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tribal_rcl_reports_dash"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="40dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.admin.AnnounceActivity"
+    android:background="@drawable/admin_bg"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/image_back_group"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:onClick="backFromAnnounce"
+        android:src="@drawable/back_icon"/>
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Announcements"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Slide to the wright to make general announcements"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        />
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_border2"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tv_header"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search and update funeral or announcement"
+            android:textColor="@color/white" />
+
+        <AutoCompleteTextView
+            android:id="@+id/admin_text_search_funeral"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_bg"
+            android:hint="enter name of the deceased or announcement heading"
+            android:textColor="@color/light_red"
+            android:textColorHint="@color/light_red"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:padding="5dp"/>
+
+
+
+    </LinearLayout>
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarFunerals"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Funeral announcement"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Announce new funeral"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp"/>
+
+                <ScrollView
+                    android:id="@+id/my_scrollVFunerals"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_border2"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli_black"
+                            android:text="Announce new Funeral"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/name"
+                            android:textColor="@color/white" />
+
+                        <EditText
+                            android:id="@+id/admin_text_funeral_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:textColor="@color/red"
+                            android:paddingLeft="5dp"
+                            android:hint="name and surname of the deceased"
+                            android:drawableLeft="@drawable/user_icon"
+                            android:background="@drawable/grey_border3"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/address"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/admin_text_funeral_address"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:inputType="textMultiLine"
+                            android:gravity="top"
+                            android:textColor="@color/red"
+                            android:paddingLeft="5dp"
+                            android:hint="address of the deceased"
+                            android:fontFamily="sans-serif-light"
+                            android:drawableLeft="@drawable/address_icon"
+                            android:background="@drawable/grey_border3"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="When did it happen?"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"/>
+
+
+
+                        <DatePicker
+                            android:id="@+id/datePickerFuneral"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:datePickerMode="spinner"
+                            android:calendarTextColor="@color/red"
+                            android:outlineAmbientShadowColor="@color/red"
+                            android:outlineSpotShadowColor="@color/red"
+                            android:calendarViewShown="false"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="When will be the burial?"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/admin_text_funeral_when_burial"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:textColor="@color/red"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="date of burial (optional)"
+                            android:drawableLeft="@drawable/date_icon"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/grey_border3"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Contact number"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/admin_text_funeral_contact_number"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="phone"
+                            android:drawableLeft="@drawable/phone_icon"
+                            android:fontFamily="sans-serif-light"
+                            android:hint="who to contact for clarity"
+                            android:textColor="@color/red"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/grey_border3"/>
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Anything to add?"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp" />
+
+                        <EditText
+                            android:id="@+id/admin_text_funeral_extras"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:hint="optional"
+                            android:textColor="@color/red"
+                            android:fontFamily="sans-serif-light"
+                            android:drawableLeft="@drawable/more_icon"
+                            android:paddingLeft="5dp"
+                            android:background="@drawable/grey_border3"/>
+
+                        <Button
+                            android:id="@+id/admin_btn_announce_funeral"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_button2"
+                            android:text="@string/Announce"
+                            android:onClick="announceFuneral"
+                            android:textColor="@color/white"
+                            app:backgroundTint="@color/primary"
+                            android:textAllCaps="false"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/grey_border2"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="All Reported Funerals"
+                                android:fontFamily="@font/muli_black"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"/>
+
+                            <ProgressBar
+                                android:id="@+id/simpleProgressBarAnn"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:max="100"
+                                android:progress="50"
+                                android:padding="5dp"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:visibility="gone"
+                                android:indeterminate="true"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/listFunerals"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarGeneral"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="General Announcements"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@color/primary"
+                    android:textSize="20sp"
+                    android:letterSpacing="0.04" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Make general announcements like meetingsnetc"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp"/>
+
+                <ScrollView
+                    android:id="@+id/my_scrollVGeneral"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/first_layout">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/grey_border2"
+                        android:elevation="10dp"
+                        android:orientation="vertical"
+                        android:padding="10dp"
+                        >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/muli_black"
+                            android:text="New General announcement"
+                            android:textColor="@color/black"
+                            android:layout_gravity="center" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Heading"
+                            android:textColor="@color/white" />
+
+                        <EditText
+                            android:id="@+id/admin_text_general_heading"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:inputType="text"
+                            android:textColor="@color/red"
+                            android:paddingLeft="5dp"
+                            android:hint="Heading"
+                            android:drawableLeft="@drawable/heading_icon"
+                            android:background="@drawable/grey_border3"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Announcement"
+                            android:textColor="@color/white"
+                            android:layout_marginTop="10dp"/>
+
+                        <EditText
+                            android:id="@+id/admin_text_general_announcement"
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:inputType="textMultiLine"
+                            android:gravity="top"
+                            android:textColor="@color/red"
+                            android:paddingLeft="5dp"
+                            android:hint="Announcement"
+                            android:fontFamily="sans-serif-light"
+                            android:drawableLeft="@drawable/assets_icon"
+                            android:background="@drawable/grey_border3"/>
+
+
+
+
+                        <Button
+                            android:id="@+id/admin_btn_general_announcement"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/bg_button2"
+                            android:text="@string/Announce"
+                            android:textColor="@color/white"
+                            android:onClick="announceGeneral"
+                            app:backgroundTint="@color/primary"
+                            android:textAllCaps="false"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:background="@drawable/grey_border2"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:elevation="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="All announcements"
+                                android:fontFamily="@font/muli_black"
+                                android:textColor="@color/white"
+                                android:textSize="18sp"/>
+
+                            <ProgressBar
+                                android:id="@+id/simpleProgressGeneral"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:max="100"
+                                android:progress="50"
+                                android:padding="5dp"
+                                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                                android:visibility="gone"
+                                android:indeterminate="true"/>
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/listGenerals"
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+</RelativeLayout>

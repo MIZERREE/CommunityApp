@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.admin.AdminFinesFragment"
+    android:background="@drawable/admin_bg"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo_leola_black"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fines"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fine or clear a fine from community member"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginTop="10dp"/>
+
+    <LinearLayout
+        android:id="@+id/first_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/grey_border2"
+        android:elevation="10dp"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_below="@+id/tv_sub_header">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search member"
+            android:textColor="@color/white" />
+
+        <AutoCompleteTextView
+            android:id="@+id/admin_text_search_fine_member"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/edit_bg"
+            android:hint="name of community member"
+            android:textColor="@color/light_red"
+            android:textColorHint="@color/light_red"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="5dp"
+            android:drawableLeft="@drawable/search_icon"
+            android:padding="5dp"/>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/my_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+        android:layout_marginBottom="65dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grey_border2"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fine community member"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:id="@+id/admin_text_fine_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fri 09 jul 2021"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/name"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/admin_text_fine_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:enabled="false"
+                    android:drawableLeft="@drawable/user_icon"
+                    android:hint="name"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/grey_border3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/address"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/admin_text_fine_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:hint="address"
+                    android:enabled="false"
+                    android:fontFamily="sans-serif-light"
+                    android:background="@drawable/grey_border3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/description"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/admin_text_fine_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:hint="description"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/description_icon"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/grey_border3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Amount"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/admin_text_fine_amount"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:hint="R0.00"
+                    android:gravity="right"
+                    android:drawableLeft="@drawable/money_icon"
+                    android:fontFamily="sans-serif-light"
+                    android:padding="5dp"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/grey_border3"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Due date"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/admin_text_fine_due_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:inputType="text"
+                    android:drawableLeft="@drawable/date_icon"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="optional"
+                    android:text="No due date"
+                    android:textColor="@color/red"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/grey_border3"/>
+
+
+                <Button
+                    android:id="@+id/btn_admin_fine_user"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button2"
+                    android:textAllCaps="false"
+                    android:text="@string/fines"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primary"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/grey_border2"
+                android:padding="10dp"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fined Members will be listed bellow"
+                    android:textColor="@color/white"/>
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarFines"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rcyFinedMembers"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

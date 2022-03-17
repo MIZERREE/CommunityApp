@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottom_nav_dashboard"
+        android:title="Dashboard"
+        android:icon="@drawable/dashboad_icon"
+        app:cnb_backgroundColor="@color/background2"/>
+    <item
+        android:id="@+id/bottom_nav_financial"
+        android:title="Contributions"
+        android:icon="@drawable/money_icon"
+        app:cnb_backgroundColor="@color/background2"/>
+    <item
+        android:id="@+id/bottom_nav_fines"
+        android:title="Fines"
+        android:icon="@drawable/money_icon"
+        app:cnb_backgroundColor="@color/background2"/>
+    <item
+        android:id="@+id/bottom_nav_assets"
+        android:title="Assets"
+        android:icon="@drawable/assets_icon"
+        app:cnb_backgroundColor="@color/background2"/>
+    <item
+        android:id="@+id/bottom_nav_incidents"
+        android:title="Incident report"
+        android:icon="@drawable/incident_icon"
+        app:cnb_backgroundColor="@color/background2"/>
+    <item
+        android:id="@+id/bottom_nav_profile"
+        android:title="Profile"
+        android:icon="@drawable/user_icon"
+        app:cnb_backgroundColor="@color/background2"/>
+
+</menu>

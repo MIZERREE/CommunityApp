@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="10dp"
+    android:background="@color/grey">
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add new item or items to inventory"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/primary"/>
+
+    <ImageView
+        android:id="@+id/img_cancel"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/close_icon"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_inv_item_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Item name"
+        android:layout_gravity="center"
+        android:layout_below="@id/img_cancel"
+        app:startIconDrawable="@drawable/assets_icon"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColor="@color/red"
+        android:textColorHint="@color/light_red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/primary"
+        app:startIconTint="@color/primary"
+        android:layout_marginTop="10dp"
+        app:boxStrokeWidthFocused="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="text"
+            android:background="@drawable/edit_bg"
+            android:textColor="@color/red"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/edt_inv_item_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="How many"
+        android:layout_gravity="center"
+        android:layout_below="@id/edt_inv_item_name"
+        app:startIconDrawable="@drawable/one_icon"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:textColor="@color/red"
+        android:textColorHint="@color/light_red"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/primary"
+        app:startIconTint="@color/primary"
+        app:boxStrokeWidthFocused="2dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:background="@drawable/edit_bg"
+            android:textColor="@color/red"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/tbn_inv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textAllCaps="false"
+        android:layout_below="@+id/edt_inv_item_value"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

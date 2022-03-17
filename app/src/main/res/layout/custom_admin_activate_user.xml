@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp">
+
+    <TextView
+        android:id="@+id/tv_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full names:"
+        android:layout_below="@+id/tv_msg"/>
+
+    <TextView
+        android:id="@+id/ed_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full names:"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_msg"/>
+
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Status:"
+        android:layout_below="@id/tv_name"/>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/sp_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:textOff="Not active"
+        android:textOn="Active"
+        android:layout_below="@id/tv_name"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Group:"
+        android:layout_below="@id/sp_status"/>
+
+    <Spinner
+        android:id="@+id/sp_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not active"
+        android:layout_below="@id/sp_status"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/tv_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Role:"
+        android:layout_below="@id/sp_group"/>
+
+    <Spinner
+        android:id="@+id/sp_role"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not active"
+        android:layout_below="@id/sp_group"
+        android:layout_alignParentRight="true"/>
+
+
+    <TextView
+        android:id="@+id/tv_fines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member has fines?:"
+        android:layout_below="@id/sp_role"/>
+
+    <TextView
+        android:id="@+id/ed_fines"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/sp_role"/>
+
+    <TextView
+        android:id="@+id/tv_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Member has assets?:"
+        android:layout_below="@id/ed_fines"/>
+
+    <TextView
+        android:id="@+id/ed_assets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Yes"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/ed_fines"/>
+
+
+    <Button
+        android:id="@+id/tbn_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:layout_below="@+id/ed_assets"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:id="@+id/tbn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Close"
+        android:layout_below="@+id/ed_assets"
+        android:layout_alignParentLeft="true"/>
+
+</RelativeLayout>

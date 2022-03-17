@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1067842767987",
+    "firebase_url": "https://community-ap-default-rtdb.firebaseio.com",
+    "project_id": "community-ap",
+    "storage_bucket": "community-ap.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1067842767987:android:e86f5cf7b66d1060162e06",
+        "android_client_info": {
+          "package_name": "com.ree.mizer.communityapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1067842767987-muc8u5aiqn0slmna57uasmc2mhdsu5ca.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDafm_61RSbY0bMA2Cz0xmC_86LFJr1PHc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1067842767987-muc8u5aiqn0slmna57uasmc2mhdsu5ca.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

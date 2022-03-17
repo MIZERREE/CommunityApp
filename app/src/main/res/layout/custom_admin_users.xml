@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_border4"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    android:orientation="vertical"
+    android:layout_marginBottom="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="First name"
+                android:enabled="false"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/user_icon"
+                android:background="@drawable/grey_border"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Last name"
+                android:enabled="false"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_last_name"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/user_icon"
+                android:background="@drawable/grey_border"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address"
+                android:textColor="@color/primary"/>
+
+            <EditText
+                android:id="@+id/admin_update_address"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:drawableTint="@color/primary"
+                android:inputType="textMultiLine"
+                android:layout_gravity="top"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/address_icon"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Village"
+                android:enabled="false"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_village"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/address_icon"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone number"
+                android:enabled="false"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_phone"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="phone"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/phone_icon"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email address"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_email"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="textEmailAddress"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/email_icon"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of birth"
+                android:enabled="false"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_DOB"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/date_icon"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of registration"
+                android:enabled="false"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_DOR"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:textColor="@color/red"
+                android:drawableStart="@drawable/date_icon"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Role"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_role"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:drawableTint="@color/primary"
+                android:drawableStart="@drawable/user_icon"
+                android:textColor="@color/red"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Group"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_group"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:drawableStart="@drawable/group_icon"
+                android:textColor="@color/red"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Status"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_status"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:drawableStart="@drawable/status_icon"
+                android:textColor="@color/red"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Member has fines?"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_has_fines"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:drawableStart="@drawable/money_icon"
+                android:textColor="@color/red"
+                android:background="@drawable/grey_border"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                android:text="Member has assets?"
+                android:textColor="@color/primary" />
+
+            <EditText
+                android:id="@+id/admin_update_has_assets"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:inputType="text"
+                android:enabled="false"
+                android:drawableTint="@color/primary"
+                android:drawableStart="@drawable/assets_icon"
+                android:textColor="@color/red"
+                android:background="@drawable/grey_border"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp">
+
+        <Button
+            android:id="@+id/button_admin_update"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:text="Update user"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

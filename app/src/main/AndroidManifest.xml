@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ree.mizer.communityapp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/app_luanch"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_luanch"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CommunityApp">
+        <activity android:name=".roles.tribal.TribalDashActivity"></activity>
+        <activity android:name=".roles.admin.AdminProfileActivity" />
+        <activity android:name=".roles.admin.IncidentActivity" />
+        <activity android:name=".roles.admin.InventoryActivity" />
+        <activity android:name=".roles.admin.AdminAddUserActivity" />
+        <activity android:name=".roles.admin.groups.GroupsActivity" />
+        <activity android:name=".ConfirmationActivity" />
+        <activity android:name=".roles.tribal.BroadcastActivity" />
+        <activity android:name=".roles.household.UserAnnounceActivity" />
+        <activity android:name=".roles.household.HouseHoldDashActivity" />
+        <activity android:name=".roles.admin.AnnounceActivity" />
+        <activity android:name=".roles.admin.AdminDashActivity" />
+        <activity android:name=".login.RegisterActivity" />
+        <activity android:name=".login.ForgotPasswordActivity" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/app_luanch" />
+        <!--
+ Set custom default icon. This is used when no icon is set for incoming notification messages.
+     See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/primary" />
+        <!--
+ Set color used with incoming notification messages. This is used when no color is set for the incoming
+             notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <service
+            android:name=".pojos.MyNotifications"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <service
+            android:name=".pojos.whatsApp.WhatsAppAccessibilityService"
+            android:label="My WhatsApp Accessibility"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICES">
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/whatsappservices"
+                />
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityServices"/>
+            </intent-filter>
+
+        </service>
+
+        <service
+            android:name=".pojos.fcm.FirebaseMessagingService"
+            android:permission="TODO"
+            tools:ignore="ExportedService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

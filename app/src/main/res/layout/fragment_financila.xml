@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.household.FinancilaFragment"
+    android:background="@drawable/user_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Financial contributions"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pay financial contributions to your Group"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/user_tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You fall under"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/tv_sub_header"/>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/logo_leola_black"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tv_sub_header"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/user_tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Leola Group"
+        android:textColor="@color/primary"
+        android:layout_below="@+id/user_tv_group"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_below="@+id/user_tv_group_name"
+        android:layout_marginTop="15dp"
+        android:background="@color/background2"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/user_tv_group_name"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="65dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/cont_hist_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/simpleProgressBarCont"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:max="100"
+                    android:progress="50"
+                    android:padding="5dp"
+                    style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                    android:visibility="gone"
+                    android:indeterminate="true"/>
+
+                <TextView
+                    android:id="@+id/user_tv_tot_contributions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_sub_header"
+                    android:layout_marginTop="25dp"
+                    android:text="You contributed R"
+                    android:textColor="@color/primary"
+                    android:textSize="13sp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/user_rcy_my_contributions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

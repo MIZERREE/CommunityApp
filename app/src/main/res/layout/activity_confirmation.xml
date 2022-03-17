@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfirmationActivity"
+    android:paddingLeft="10dp">
+
+    <EditText
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registered !!"
+        android:layout_centerInParent="true"
+        android:textSize="40dp"
+        android:fontFamily="@font/muli_black"
+        />
+
+    <EditText
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Account created successfully, administrator will inform you once your account is ready for use."
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_below="@+id/tv"
+        android:textSize="18dp"
+        android:fontFamily="@font/muli_light"
+        android:textStyle="bold"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerInParent="true"
+        android:text="Okay"
+        android:onClick="done"
+        android:background="@drawable/bg_button2"
+        android:textAllCaps="false"
+        app:backgroundTint="@color/primary"/>
+
+</RelativeLayout>

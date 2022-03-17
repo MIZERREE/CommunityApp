@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.household.ReportIncidentFragment"
+    android:background="@drawable/user_bg"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/tv_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incident Report"
+        android:textColor="@color/primary"
+        android:fontFamily="@font/muli_black"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_sub_header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Let the community know about an incident"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/tv_header"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/tv_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Incidents Reported so far:"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/primary"
+        android:textSize="13sp"
+        android:layout_below="@+id/tv_sub_header"/>
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="27"
+        android:textColor="@color/primary"
+        android:layout_below="@+id/tv_group"
+        android:textSize="15sp"
+        android:textStyle="bold"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_group_name"
+        android:layout_marginTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:elevation="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/muli_black"
+                    android:text="Report an incident to the community"
+                    android:textColor="@color/primary"
+                    android:layout_gravity="center"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/text_incident_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fri 09 jul 2021"
+                    android:textColor="@color/primary" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/name"
+                    android:textColor="@color/primary" />
+
+                <EditText
+                    android:id="@+id/user_text_report_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/edit_bg"
+                    android:hint="Reporter"
+                    android:textColor="@color/light_red"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/user_icon"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="What happened"
+                    android:textColor="@color/primary"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/user_text_report_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:inputType="textMultiLine"
+                    android:fontFamily="sans-serif-light"
+                    android:drawableLeft="@drawable/description_icon"
+                    android:hint="a description of the incident"
+                    android:textColor="@color/red"
+                    android:gravity="top"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/grey_border3"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Where"
+                    android:textColor="@color/primary"
+                    android:layout_marginTop="10dp" />
+
+                <EditText
+                    android:id="@+id/user_text_report_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:inputType="textMultiLine"
+                    android:gravity="top"
+                    android:drawableLeft="@drawable/address_icon"
+                    android:textColor="@color/red"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="location, or a house where the incident took place"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/grey_border3"/>
+
+
+                <Button
+                    android:id="@+id/user_btn_report"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_button2"
+                    android:text="Report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primary"
+                    />
+
+                <Button
+                    android:id="@+id/user_btn_test"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_button2"
+                    android:text="Test Notifications"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/primary"
+                    />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

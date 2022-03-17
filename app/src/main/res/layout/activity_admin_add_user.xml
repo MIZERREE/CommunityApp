@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".roles.admin.AdminAddUserActivity"
+    android:background="@drawable/user_registration"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/muli_black"
+        android:text="Add New User"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:layout_marginTop="64dp"
+        android:elevation="5dp"/>
+
+    <ScrollView
+        android:id="@+id/my_scrollV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first_layout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_border2"
+            android:elevation="10dp"
+            android:orientation="vertical"
+            android:padding="10dp"
+            >
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter full name"
+                app:startIconDrawable="@drawable/user_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_surname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter surname"
+                app:startIconDrawable="@drawable/user_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_village"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter name of village"
+                app:startIconDrawable="@drawable/address_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_address"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:hint="Enter residential address"
+                app:startIconDrawable="@drawable/address_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/red"
+                    app:backgroundTint="@color/grey"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter phone number"
+                app:startIconDrawable="@drawable/phone_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="Date of birth"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <DatePicker
+                android:id="@+id/add_date_of_birth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:datePickerMode="spinner"
+                android:calendarViewShown="false"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_black"
+                android:text="Date of registration"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/add_date_of_reg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/muli_light"
+                android:text="Fri 09 jul 2021"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter email address (optional)"
+                app:startIconDrawable="@drawable/email_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="text"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter password"
+                app:startIconDrawable="@drawable/password_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/add_text_conf_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm password"
+                app:startIconDrawable="@drawable/password_icon"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                app:hintTextColor="@color/white"
+                android:textColorHint="@color/white"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/primary"
+                app:boxStrokeWidthFocused="2dp"
+                app:boxStrokeColor="@color/grey"
+                app:backgroundTint="@color/grey">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:inputType="textPassword"
+                    android:textColor="@color/red"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/add_tv_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Group"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/add_sp_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not active"/>
+
+            <TextView
+                android:id="@+id/add_tv_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Role:"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+            <Spinner
+                android:id="@+id/add_sp_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not active"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <Button
+                    android:id="@+id/add_button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_button2"
+                    android:text="Add User"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white"
+                    app:backgroundTint="@color/primary"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

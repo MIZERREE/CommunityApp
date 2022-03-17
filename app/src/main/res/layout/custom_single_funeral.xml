@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/grey_boder4"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/edit_custom_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heading"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="@color/light_red"/>
+
+        <TextView
+            android:id="@+id/text_custom_single_when_happened"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12dp"
+            android:text="When did they pass away"
+            android:textColor="@color/light_red" />
+
+        <EditText
+            android:id="@+id/edit_custom_single_when_happened"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:text="2021/06/15"
+            android:padding="5dp"
+            android:background="@drawable/edit_bg2"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/text_custom_single__custom_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Name of the deceased"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_red"/>
+
+        <EditText
+            android:id="@+id/edit_custom_single_name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:text="John Van Re"
+            android:padding="5dp"
+            android:background="@drawable/edit_bg2"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_red"/>
+
+        <EditText
+            android:id="@+id/edit_custom_single_address"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:textSize="12dp"
+            android:text="Topsail cresent"
+            android:padding="5dp"
+            android:inputType="textMultiLine"
+            android:gravity="top"
+            android:background="@drawable/edit_bg2"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="contacts"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_red"/>
+
+        <EditText
+            android:id="@+id/edit_custom_single_contacts"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:text="+27783025416"
+            android:padding="5dp"
+            android:background="@drawable/edit_bg2"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_burial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Burial"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_red"/>
+
+        <EditText
+            android:id="@+id/edit_custom_single_when_burial"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:text="2021/06/15"
+            android:padding="5dp"
+            android:background="@drawable/edit_bg2"
+            android:textColor="@color/light_red" />
+
+        <TextView
+            android:id="@+id/edit_custom_extras"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Extras"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/light_red"/>
+
+        <EditText
+            android:id="@+id/edit_custom_single_extra"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textSize="12dp"
+            android:text="No extra"
+            android:padding="5dp"
+            android:background="@drawable/edit_bg2"
+            android:textColor="@color/light_red" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/button_custom_single_cancel"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:layout_marginRight="10dp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/primary"/>
+
+            <Button
+                android:id="@+id/button_custom_single_delete"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:text="Delete"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/primary"/>
+
+            <Button
+                android:id="@+id/button_custom_single_update"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginTop="5dp"
+                android:text="Update"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:layout_marginLeft="10dp"
+                android:backgroundTint="@color/primary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
